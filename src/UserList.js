@@ -41,7 +41,7 @@ const UserList = ({ users, setUsers, setCurrentUser }) => {
       document.title = originalTitle
     }
 
-  }, [])
+  }, [setUsers])
 
 
   // Displays list of users

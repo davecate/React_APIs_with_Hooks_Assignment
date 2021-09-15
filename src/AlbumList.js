@@ -38,7 +38,7 @@ const AlbumList = ({ currentUser, albums, setAlbums }) => {
     // Cleanup: aborts unfinished API requests
     return () => abortController.abort()
 
-  }, [currentUser])
+  }, [setAlbums, currentUser])
 
   // Conditional: if list of albums is empty, return an introductory message.
   if (albums.length > 0) {
